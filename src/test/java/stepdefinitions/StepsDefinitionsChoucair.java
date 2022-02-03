@@ -4,9 +4,11 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
+import questions.Answer;
 import tasks.OpenUp;
 import tasks.Search;
 
@@ -30,8 +32,8 @@ public class StepsDefinitionsChoucair {
 
     }
     @Then("she finds the course called {string}")
-    public void sheFindsTheCourseCalled(String string) {
-
+    public void sheFindsTheCourseCalled(String question) {
+    OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(question)));
     }
 
 }

@@ -1,7 +1,6 @@
 package tasks;
 
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
@@ -10,9 +9,9 @@ import net.serenitybdd.screenplay.actions.Open;
 import userinterface.Page;
 import static userinterface.Page.*;
 
-public class OpenUp<string> implements Task {
+public class OpenUp implements Task {
     private static Page page;
-    private string course;
+
 
     public static OpenUp page() {
         return Tasks.instrumented(OpenUp.class);
@@ -26,8 +25,7 @@ public class OpenUp<string> implements Task {
                 Click.on(CAMPO_USUARIO),
                 Enter.theValue("eespinosam").into(CAMPO_USUARIO),
                 Enter.theValue("Choucair2022*").into(CAMPO_CONTRASENA),
-                Click.on(BOTON_ACCEDER),
-                Click.on(CAMPO_BUSCAR)
+                Click.on(BOTON_ACCEDER)
 
 
         );

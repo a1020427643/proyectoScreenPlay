@@ -19,8 +19,7 @@ public class Page extends  PageObject{
         public static final Target BOTON_ACCEDER = Target.the("boton acceder")
                 .located(By.xpath(("//button[@class= 'btn btn-primary']")));
 
-        public static final Target CAMPO_BUSCAR = Target.the("buscar el curso")
-                .located(By.xpath("//class[@class='btn nav-link float-sm-left mr-1 btn-secondary']"));
+
 
 }
 

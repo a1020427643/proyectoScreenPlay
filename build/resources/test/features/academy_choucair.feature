@@ -7,5 +7,5 @@ Feature: Academy Choucair
   @scenario
   Scenario: Search automation course
     Given that 'Maritza' wants to learn automation at the Academy Choucair
-    When she searches for the course "Recursos Automatización Bancolombia" on the choucair academy platform
-    Then she finds the course called "Recursos Automatización Bancolombia"
+    When she searches for the course "Guías Competencias Corporativas" on the choucair academy platform
+    Then she finds the course called "Opciones de inscripción"
