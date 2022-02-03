@@ -23,7 +23,7 @@ public class StepsDefinitionsChoucair {
 
     @When("she searches for the course {string} on the choucair academy platform")
     public void sheSearchesForTheCourseOnTheChoucairAcademyPlatform(String string) {
-
+       
     }
     @Then("she finds the course called {string}")
     public void sheFindsTheCourseCalled(String string) {
