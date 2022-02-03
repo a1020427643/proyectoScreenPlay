@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-02-2022 04:33</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-02-2022 09:38</span>
     <br style="clear:left"/>
 </div>
 
@@ -201,9 +201,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Search automation course
+                                <span class="failing-color">Search automation course
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -220,6 +220,52 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be present exception: Expected condition failed: waiting for By.xpath: //class[@class='btn nav-link float-sm-left mr-1 btn-secondary'] to be present (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'CHMEP9GBCYH3', ip: '192.168.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>tasks.OpenUp.performAs(OpenUp.java:23)<br />stepdefinitions.StepsDefinitionsChoucair.thatWantsToLearnAutomationAtTheAcademyChoucair(StepsDefinitionsChoucair.java:21)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:57)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: org.openqa.selenium.TimeoutException
+                    </h4>
+                    <div>
+                            <pre>Expected condition failed: waiting for By.xpath: //class[@class='btn nav-link float-sm-left mr-1 btn-secondary'] to be present (tried for 5 second(s) with 100 milliseconds interval)<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'CHMEP9GBCYH3', ip: '192.168.1.70', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'<br>Driver info: driver.version: unknown</pre>
+                        <pre>tasks.OpenUp.performAs(OpenUp.java :23)<br />stepdefinitions.StepsDefinitionsChoucair.thatWantsToLearnAutomationAtTheAcademyChoucair(StepsDefinitionsChoucair.java :21)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java :66)<br />io.cucumber.java.Invoker.invoke(Invoker.java :24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java :47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java :29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java :66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java :63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java :92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java :64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java :51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java :104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java :73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java :27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :258)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java :57)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource5718301891036199552.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="c9fe49ff54b90e7be9632c98b759392606ebfeb9909feb83d2978ffb620a076b.png" title=" Given that 'Maritza' wants to learn automation at the Academy Choucair" width="1366"/>
@@ -229,11 +275,8 @@
                 <img src="5a5ea84b6c670c219fcb8f50986875fb628759dacc08ca06363bd89452147cd8.png" title=" Maritza clicks on ingresar usuario" width="1366"/>
                 <img src="71ac7e9fa9b5e6ee48025d6bc40109aff37540742b5e6989681e01a17dbfee38.png" title=" Maritza enters 'eespinosam' into ingresar usuario" width="1366"/>
                 <img src="a5b034340a407be47409797f24930ab41cde56a336e9dadf19afdfc427a7f391.png" title=" Maritza enters 'Choucair2022*' into ingresar contrase&Atilde;&plusmn;a" width="1366"/>
-                <img src="95e62261c79d262713178c6ecddb0e44376361625f22a34cc4ca558f466b7e40.png" title=" Maritza clicks on boton acceder" width="1366"/>
-                <img src="95e62261c79d262713178c6ecddb0e44376361625f22a34cc4ca558f466b7e40.png" title=" Maritza open up (completed)" width="1366"/>
-                <img src="95e62261c79d262713178c6ecddb0e44376361625f22a34cc4ca558f466b7e40.png" title=" Given that 'Maritza' wants to learn automation at the Academy Choucair (completed)" width="1366"/>
-                <img src="95e62261c79d262713178c6ecddb0e44376361625f22a34cc4ca558f466b7e40.png" title=" When she searches for the course &quot;Recursos Automatizaci&oacute;n Bancolombia&quot; on the choucair academy platform" width="1366"/>
-                <img src="95e62261c79d262713178c6ecddb0e44376361625f22a34cc4ca558f466b7e40.png" title=" Then she finds the course called &quot;Recursos Automatizaci&oacute;n Bancolombia&quot;: <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="560a1c07ae2098157d8dc9c73a501483789e7b270f21b8bca40cd52e3ac59fb3.png" title=" Maritza clicks on boton acceder" width="1366"/>
+                <img src="95e62261c79d262713178c6ecddb0e44376361625f22a34cc4ca558f466b7e40.png" title=" Maritza clicks on buscar el curso: <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 
